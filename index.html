@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS & JavaScript Animation Demo</title>
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>✨ CSS3 + JavaScript Interactive Demo ✨</h1>
+
+  <!-- ==================== Part 1: CSS Transitions & Animations ==================== -->
+  <section>
+    <h2>Part 1: CSS Transitions & Animations</h2>
+    <button class="btn">Hover Me</button>
+    <h3 class="fade-in">I fade in on page load</h3>
+    <div class="spinner"></div>
+  </section>
+
+  <!-- ==================== Part 2: JavaScript Functions ==================== -->
+  <section>
+    <h2>Part 2: JavaScript Functions — Scope, Parameters & Return Values</h2>
+    <p id="scoreDisplay">Score: 0</p>
+    <div class="box" id="animateBox"></div>
+    <button onclick="growBox()">Grow Box</button>
+    <button onclick="shrinkBox()">Shrink Box</button>
+    <button onclick="randomizeBox()">Randomize Color</button>
+    <button onclick="addPoints(5)">+5 Points</button>
+    <button onclick="resetScore()">Reset Score</button>
+  </section>
+
+  <!-- ==================== Part 3: CSS + JavaScript Integration ==================== -->
+  <section>
+    <h2>Part 3: Combining CSS Animations with JavaScript</h2>
+    <!-- Animate box on button click -->
+    <div class="box" id="jsBox"></div>
+    <button onclick="toggleBox()">Animate Box</button>
+
+    <!-- Card flip -->
+    <div class="card" id="card">
+      <div class="card-inner">
+        <div class="card-front">Front</div>
+        <div class="card-back">Back</div>
+      </div>
+    </div>
+
+    <!-- Loading spinner controlled by JS -->
+    <div class="spinner" id="jsSpinner"></div>
+    <button onclick="toggleSpinner()">Toggle Loading</button>
+
+    <!-- Modal -->
+    <button onclick="showModal()">Show Modal</button>
+    <div class="overlay" id="overlay" onclick="hideModal()"></div>
+    <div class="modal" id="modal">
+      <h3>Hello from the Modal 👋</h3>
+      <p>This modal slides and fades in/out.</p>
+      <button onclick="hideModal()">Close</button>
+    </div>
+  </section>
+
+  <!-- Link external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
